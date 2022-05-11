@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { CardModel } from './models/card.model';
 
 @Injectable({
   providedIn: 'root',
@@ -19,5 +20,9 @@ export class CardsService {
 
   listarCards(): Observable<any> {
     return this.http.get('http://localhost:3000/cards');
+  }
+
+  adicionarCards(card: CardModel): Observable<any> {
+    return this.http.post('http://localhost:3000/cards/', card);
   }
 }

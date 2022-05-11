@@ -1,10 +1,26 @@
-<h2>Cards</h2>
+<hr>
+<h2>Adicionar um novo card a base de dados</h2>
+<form>
+    <p>Nome: <input type="text" name="nome" [(ngModel)]="card.nome"></p>
+    <p>Atributo: <input type="text" name="atributo" [(ngModel)]="card.atributo"></p>
+    <p>Nível: <input type="number" name="nivel" [(ngModel)]="card.nivel"></p>
+    <p>Tipo: <input type="text" name="tipo" [(ngModel)]="card.tipo[0]"> /
+        <input type="text" name="tipo" [(ngModel)]="card.tipo[1]"> /
+        <input type="text" name="tipo" [(ngModel)]="card.tipo[2]">
+    </p>
+    <p>ATK: <input type="text" name="atk" [(ngModel)]="card.atk"></p>
+    <p>DEF: <input type="text" name="def" [(ngModel)]="card.def"></p>
+    <p>Descrição: <input type="text" name="descricao" [(ngModel)]="card.descricao"></p>
+    <button type="submit" (click)="adicionarCard()">Adicionar card</button>
+</form>
+<hr>
+<h2>Lista de cards</h2>
 <table *ngFor="let card of cards">
     <br>
-    <tr>
+    <!-- <tr>
         <th>ID</th>
         <td>{{card.id}}</td>
-    </tr>
+    </tr> -->
     <tr>
         <th>Nome:</th>
         <td>{{card.nome}}</td>
