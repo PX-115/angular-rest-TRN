@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "nome": "Superdreadnought Rail Cannon Gustav Max",
+      "atributo": "Terra",
+      "nivel": 10,
+      "tipoMonstro": "Máquina",
+      "tipoDeck": "Xyz",
+      "efeito": true,
+      "atk": 3000,
+      "def": 3000,
+      "materiais": "2 monstros de Nível 10",
+      "descricao": "Uma vez por turno: você pode desassociar 1 matéria deste card; cause 2000 de dano ao seu oponente."
+    },
+    {
+      "id": 2,
+      "nome": "Herald of Ultimateness",
+      "atributo": "Luz",
+      "nivel": 12,
+      "tipoMonstro": "Fada",
+      "tipoDeck": "Ritual",
+      "efeito": true,
+      "atk": 2000,
+      "def": 3000,
+      "materiais": null,
+      "descricao": "Você pode Invocar este card por Invocação-Ritual com 'Oráculo do Arauto'. Deve ser Invocado por Invocação-Ritual. Quando seu oponente Invocaria um ou mais monstros por Invocação-Especial OU quando ele ativar um Card de Magia/Armadilha ou um efeito de monstro (Efeito Rápido): você pode enviar 1 monstro Fada da sua mão para o Cemitério; negue a Invocação-Especial ou ativação e, se isso acontecer, destrua esse card."
+    },
+    {
+      "id": 3,
+      "nome": "Blue-Eyes White Dragon",
+      "atributo": "Luz",
+      "nivel": 8,
+      "tipoMonstro": "Dragão",
+      "tipoDeck": "Main",
+      "efeito": false,
+      "atk": 3000,
+      "def": 2500,
+      "materiais": null,
+      "descricao": "Este dragão lendário é uma poderosa máquina de destruição. Praticamente invencível, muito poucos enfrentaram esta magnífica criatura e viveram para contar a história."
+    }
+  ]
+}
