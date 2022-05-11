@@ -6,14 +6,13 @@
       "atributo": "Terra",
       "nivel": 10,
       "tipo": [
-        "Máquina",
-        "Xyz",
-        "Efeito"
+        "Máquina /",
+        " Xyz /",
+        " Efeito"
       ],
       "atk": 3000,
       "def": 3000,
-      "materiais": "2 monstros de Nível 10",
-      "descricao": "Uma vez por turno: você pode desassociar 1 matéria deste card; cause 2000 de dano ao seu oponente."
+      "descricao": "2 monstros de Nível 10 \nUma vez por turno: você pode desassociar 1 matéria deste card; cause 2000 de dano ao seu oponente."
     },
     {
       "id": 2,
@@ -21,13 +20,12 @@
       "atributo": "Luz",
       "nivel": 12,
       "tipo": [
-        "Fada",
-        "Ritual",
-        "Efeito"
+        "Fada /",
+        " Ritual /",
+        " Efeito"
       ],
       "atk": 2000,
       "def": 3000,
-      "materiais": null,
       "descricao": "Você pode Invocar este card por Invocação-Ritual com 'Oráculo do Arauto'. Deve ser Invocado por Invocação-Ritual. Quando seu oponente Invocaria um ou mais monstros por Invocação-Especial OU quando ele ativar um Card de Magia/Armadilha ou um efeito de monstro (Efeito Rápido): você pode enviar 1 monstro Fada da sua mão para o Cemitério; negue a Invocação-Especial ou ativação e, se isso acontecer, destrua esse card."
     },
     {
@@ -36,12 +34,12 @@
       "atributo": "Luz",
       "nivel": 8,
       "tipo": [
-        "Dragão",
-        "Normal"
+        "Dragão /",
+        null,
+        " Normal"
       ],
       "atk": 3000,
       "def": 2500,
-      "materiais": null,
       "descricao": "Este dragão lendário é uma poderosa máquina de destruição. Praticamente invencível, muito poucos enfrentaram esta magnífica criatura e viveram para contar a história."
     }
   ]

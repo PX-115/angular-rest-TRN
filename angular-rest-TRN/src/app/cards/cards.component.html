@@ -1,39 +1,37 @@
 <h2>Cards</h2>
-<table style="width:100%">
+<table *ngFor="let card of cards">
+    <br>
     <tr>
         <th>ID</th>
-        <td>000</td>
+        <td>{{card.id}}</td>
     </tr>
     <tr>
         <th>Nome:</th>
-        <td>---</td>
+        <td>{{card.nome}}</td>
     </tr>
     <tr>
         <th>Atributo:</th>
-        <td>---</td>
+        <td>{{card.atributo}}</td>
     </tr>
     <tr>
         <th>Nível:</th>
-        <td>---</td>
+        <td>{{card.nivel}}</td>
     </tr>
     <tr>
         <th>Tipo:</th>
-        <td>--- / --- / ---</td>
+        <td>{{card.tipo[0]}} {{card.tipo[1]}} {{card.tipo[2]}}</td>
     </tr>
     <tr>
         <th>ATK:</th>
-        <td>---</td>
+        <td>{{card.atk}}</td>
     </tr>
     <tr>
         <th>DEF:</th>
-        <td>---</td>
-    </tr>
-    <tr>
-        <th>Materiais:</th>
-        <td>---</td>
+        <td>{{card.def}}</td>
     </tr>
     <tr>
         <th>Descrição:</th>
-        <td>---</td>
+        <td>{{card.descricao}}</td>
     </tr>
+    <br>
 </table>
