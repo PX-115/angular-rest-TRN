@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CardModel } from './models/card.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -19,17 +20,17 @@ export class CardsService {
   // Se o fluxo foi pressionamento de tecla, uma resposta HTTP ou um temporizador de intervalo, a interface para ouvir os valores e parar a escuta é a mesma.
 
   listarCards(): Observable<any> {
-    return this.http.get('http://localhost:3000/cards');
+    return this.http.get(environment.api);
   }
 
   adicionarCards(card: CardModel): Observable<any> {
-    return this.http.post('http://localhost:3000/cards/', card);
+    return this.http.post(environment.api, card);
   }
 
   atualizarCards(id: any, card: CardModel): Observable<any> {
-    return this.http.put('http://localhost:3000/cards/'.concat(id), card);
+    return this.http.put(environment.api.concat(id), card);
   }
   removerCards(id: any){
-    return this.http.delete('http://localhost:3000/cards/'.concat(id));
+    return this.http.delete(environment.api.concat(id));
   }
 }
