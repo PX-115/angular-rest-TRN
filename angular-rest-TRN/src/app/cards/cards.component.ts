@@ -41,4 +41,16 @@ export class CardsComponent implements OnInit {
       }
     );
   }
+
+  atualizarCard(id: number) {
+    this.cardsService.atualizarCards(id, this.card).subscribe(
+      (cards) => {
+        this.card = new CardModel('', '', 0, [], 0, 0, '');
+        this.listarCards();
+      },
+      (err) => {
+        console.log('Erro ao atualizar card - ' + err);
+      }
+    );
+  }
 }

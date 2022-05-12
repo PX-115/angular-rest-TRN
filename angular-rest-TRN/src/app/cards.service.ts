@@ -25,4 +25,8 @@ export class CardsService {
   adicionarCards(card: CardModel): Observable<any> {
     return this.http.post('http://localhost:3000/cards/', card);
   }
+
+  atualizarCards(id: any, card: CardModel): Observable<any> {
+    return this.http.put('http://localhost:3000/cards/'.concat(id), card);
+  }
 }
