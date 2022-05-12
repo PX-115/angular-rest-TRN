@@ -48,8 +48,10 @@
     <tr>
         <th>Descrição:</th>
         <td>{{card.descricao}}</td>
+        <br>
     </tr>
     <br>
-    <button (click)="atualizarCard(card.id)">Editar</button>
+    <button (click)="atualizarCard(card.id)">Atualizar</button>
+    <button (click)="removerCard(card.id)">Remover</button>
     <br>
 </table>

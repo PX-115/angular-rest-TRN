@@ -29,4 +29,7 @@ export class CardsService {
   atualizarCards(id: any, card: CardModel): Observable<any> {
     return this.http.put('http://localhost:3000/cards/'.concat(id), card);
   }
+  removerCards(id: any){
+    return this.http.delete('http://localhost:3000/cards/'.concat(id));
+  }
 }
